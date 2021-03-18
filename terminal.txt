@@ -1,0 +1,38 @@
+Terminal
+1)Посмотреть где я-pwd
+2)Создать папку -mkdir linux
+3)Зайти в папку - cd linux
+4) Создать 3 папки - mkdir folder1 folder2 folder3
+5) Зайти в любоую папку - cd folder3
+6) Создать 5 файлов (3 txt, 2 json) - touch file1.txt file2.txt file3.txt json1.json json2.json
+7) Создать 3 папки - mkdir folder1 folder2 folder3
+8) Вывести список содержимого папки - ls
+9) + Открыть любой txt файл - vim file2.txt
+10) + написать туда что-нибудь, любой текст - i -> Hello world
+11) + сохранить и выйти. - esc -> :wq
+12) Выйти из папки на уровень выше - cd ./
+13) Переместить любые 2 файла, которые вы создали, в любую другую папку -mv /Users/nataliiastukalova/desktop/linux/folder3/file1.txt /Users/nataliiastukalova/desktop/linux/file1.txt
+14) скопировать любые 2 файла, которые вы создали, в любую другую папку cp  /Users/nataliiastukalova/desktop/linux/folder3/file2.txt /Users/nataliiastukalova/desktop/linux/file2.txt
+15) Найти файл по имени - find . -name 'file2.txt'
+16) Просмотреть содержимое в реальном времени (команда grep) 
+17) Вывести несколько первых строк из текстового файла - head file2.txt
+18) Вывести несколько последних строк из текстового файла - tail file2.txt
+19) Просмотреть содержимое длинного файла (команда less) - less file2.txt
+20) Вывести дату и время - date
+21) Отправить http запрос на сервер.-https://api.quarantine.country/api/v1/regions -curl https://api.quarantine.country/api/v1/regions
+22)Написать cкрипт который выполнит автоматически пункты 3, 4, 5, 6, 7, 8, 13- 
+
+1)touch script.txt
+2)vim script.txt
+3)внутри документа
+#!/bin/bash
+cd linux
+mkdir one two three
+cd two
+touch first.txt second.txt third.txt  first.json second.json
+mkdir fol1 fol2 fol3
+ls
+mv /Users/nataliiastukalova/desktop/linux/folder3/first.txt /Users/nataliiastukalova/desktop/linux/first.txt
+4):qw
+4)chmod u+x script.sh
+5)./script.sh
